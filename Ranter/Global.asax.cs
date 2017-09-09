@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Ranter.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -13,6 +15,8 @@ namespace Ranter
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<RanterDataContext>(new RanterDataContextInitializer());
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
