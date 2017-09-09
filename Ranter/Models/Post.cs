@@ -22,5 +22,7 @@ namespace Ranter.Models
         [Required]
         public DateTime UpdateTime { get; set; }
 
+        public int Upvotes { get; set; }
+
     }
 }
