@@ -212,6 +212,8 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\RanterDataContext.cs" />
+    <Compile Include="Models\Repositories\PostRepository.cs" />
+    <Compile Include="Models\Repositories\Repository.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
