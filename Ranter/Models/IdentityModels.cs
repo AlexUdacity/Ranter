@@ -29,5 +29,7 @@ namespace Ranter.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Ranter.Models.Post> Posts { get; set; }
     }
 }

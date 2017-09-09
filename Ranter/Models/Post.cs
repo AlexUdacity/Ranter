@@ -11,8 +11,16 @@ namespace Ranter.Models
 
         [Key]
         public int PostID { get; set; }
+
+        [Required]
+        [StringLength(100)]
         public string PostName { get; set; }
+
+        [Required]
         public DateTime PostTime { get; set; }
+
+        [Required]
+        public DateTime UpdateTime { get; set; }
 
     }
 }
